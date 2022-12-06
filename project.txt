@@ -1,0 +1,671 @@
+Microsoft Windows [Version 10.0.22621.674]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>pip install virtualenv
+Collecting virtualenv
+  Downloading virtualenv-20.16.6-py3-none-any.whl (8.8 MB)
+     |████████████████████████████████| 8.8 MB 6.4 MB/s
+Collecting distlib<1,>=0.3.6
+  Downloading distlib-0.3.6-py2.py3-none-any.whl (468 kB)
+     |████████████████████████████████| 468 kB ...
+Collecting platformdirs<3,>=2.4
+  Downloading platformdirs-2.5.2-py3-none-any.whl (14 kB)
+Collecting filelock<4,>=3.4.1
+  Downloading filelock-3.8.0-py3-none-any.whl (10 kB)
+Installing collected packages: platformdirs, filelock, distlib, virtualenv
+Successfully installed distlib-0.3.6 filelock-3.8.0 platformdirs-2.5.2 virtualenv-20.16.6
+WARNING: You are using pip version 21.2.4; however, version 22.3.1 is available.
+You should consider upgrading via the 'C:\Users\shriwatsal patil\AppData\Local\Programs\Python\Python39\python.exe -m pip install --upgrade pip' command.
+
+D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>virtualenv myenv
+created virtual environment CPython3.9.9.final.0-64 in 6870ms
+  creator CPython3Windows(dest=D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main\myenv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\shriwatsal patil\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==22.3, setuptools==65.5.0, wheel==0.37.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>myenv\Scripts\activate
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main> pip install flask
+Collecting flask
+  Downloading Flask-2.2.2-py3-none-any.whl (101 kB)
+     ---------------------------------------- 101.5/101.5 kB 2.9 MB/s eta 0:00:00
+Collecting Jinja2>=3.0
+  Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+     ---------------------------------------- 133.1/133.1 kB 2.6 MB/s eta 0:00:00
+Collecting Werkzeug>=2.2.2
+  Downloading Werkzeug-2.2.2-py3-none-any.whl (232 kB)
+     ---------------------------------------- 232.7/232.7 kB 3.6 MB/s eta 0:00:00
+Collecting itsdangerous>=2.0
+  Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting importlib-metadata>=3.6.0
+  Downloading importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
+Collecting click>=8.0
+  Downloading click-8.1.3-py3-none-any.whl (96 kB)
+     ---------------------------------------- 96.6/96.6 kB 1.8 MB/s eta 0:00:00
+Collecting colorama
+  Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Collecting zipp>=0.5
+  Downloading zipp-3.10.0-py3-none-any.whl (6.2 kB)
+Collecting MarkupSafe>=2.0
+  Downloading MarkupSafe-2.1.1-cp39-cp39-win_amd64.whl (17 kB)
+Installing collected packages: zipp, MarkupSafe, itsdangerous, colorama, Werkzeug, Jinja2, importlib-metadata, click, flask
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 Werkzeug-2.2.2 click-8.1.3 colorama-0.4.6 flask-2.2.2 importlib-metadata-5.0.0 itsdangerous-2.1.2 zipp-3.10.0
+
+[notice] A new release of pip available: 22.3 -> 22.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>pip install Flask-SQLAlchemy
+Collecting Flask-SQLAlchemy
+  Downloading Flask_SQLAlchemy-3.0.2-py3-none-any.whl (24 kB)
+Collecting SQLAlchemy>=1.4.18
+  Downloading SQLAlchemy-1.4.43-cp39-cp39-win_amd64.whl (1.6 MB)
+     ---------------------------------------- 1.6/1.6 MB 3.9 MB/s eta 0:00:00
+Requirement already satisfied: Flask>=2.2 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask-SQLAlchemy) (2.2.2)
+Requirement already satisfied: Werkzeug>=2.2.2 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=2.2->Flask-SQLAlchemy) (2.2.2)
+Requirement already satisfied: Jinja2>=3.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=2.2->Flask-SQLAlchemy) (3.1.2)
+Requirement already satisfied: click>=8.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=2.2->Flask-SQLAlchemy) (8.1.3)
+Requirement already satisfied: itsdangerous>=2.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=2.2->Flask-SQLAlchemy) (2.1.2)
+Requirement already satisfied: importlib-metadata>=3.6.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=2.2->Flask-SQLAlchemy) (5.0.0)
+Collecting greenlet!=0.4.17
+  Downloading greenlet-2.0.0.post0-cp39-cp39-win_amd64.whl (187 kB)
+     ---------------------------------------- 188.0/188.0 kB 2.3 MB/s eta 0:00:00
+Requirement already satisfied: colorama in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from click>=8.0->Flask>=2.2->Flask-SQLAlchemy) (0.4.6)
+Requirement already satisfied: zipp>=0.5 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from importlib-metadata>=3.6.0->Flask>=2.2->Flask-SQLAlchemy) (3.10.0)
+Requirement already satisfied: MarkupSafe>=2.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Jinja2>=3.0->Flask>=2.2->Flask-SQLAlchemy) (2.1.1)
+Installing collected packages: greenlet, SQLAlchemy, Flask-SQLAlchemy
+Successfully installed Flask-SQLAlchemy-3.0.2 SQLAlchemy-1.4.43 greenlet-2.0.0.post0
+
+[notice] A new release of pip available: 22.3 -> 22.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>pip install Flask Mail
+Requirement already satisfied: Flask in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (2.2.2)
+Collecting Mail
+  Downloading Mail-2.1.0.tar.gz (24 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: Werkzeug>=2.2.2 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask) (2.2.2)
+Requirement already satisfied: itsdangerous>=2.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask) (2.1.2)
+Requirement already satisfied: importlib-metadata>=3.6.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask) (5.0.0)
+Requirement already satisfied: Jinja2>=3.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask) (3.1.2)
+Requirement already satisfied: click>=8.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask) (8.1.3)
+Collecting BareNecessities
+  Downloading BareNecessities-0.2.8.tar.gz (21 kB)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: colorama in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from click>=8.0->Flask) (0.4.6)
+Requirement already satisfied: zipp>=0.5 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from importlib-metadata>=3.6.0->Flask) (3.10.0)
+Requirement already satisfied: MarkupSafe>=2.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Jinja2>=3.0->Flask) (2.1.1)
+Building wheels for collected packages: Mail, BareNecessities
+  Building wheel for Mail (setup.py) ... done
+  Created wheel for Mail: filename=Mail-2.1.0-py3-none-any.whl size=7066 sha256=a74b21476e9ece54b01444ebba80d2ed2de7b94d47979248549cc0868042bd2e
+  Stored in directory: c:\users\shriwatsal patil\appdata\local\pip\cache\wheels\a7\e8\0d\55342d828b943c07903d0e91cb5f9369a09b7c79dfb3a7062b
+  Building wheel for BareNecessities (setup.py) ... done
+  Created wheel for BareNecessities: filename=BareNecessities-0.2.8-py3-none-any.whl size=9463 sha256=803a8aebdaefa14c3c60773564a1ab50df3d56ca68d51b532ae1ce87132864c0
+  Stored in directory: c:\users\shriwatsal patil\appdata\local\pip\cache\wheels\0a\c9\29\964ae0c7992c55bc3e2ee9cd664381758bec1a808f4136b45f
+Successfully built Mail BareNecessities
+Installing collected packages: BareNecessities, Mail
+Successfully installed BareNecessities-0.2.8 Mail-2.1.0
+
+[notice] A new release of pip available: 22.3 -> 22.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>pip install mysqlclient
+Collecting mysqlclient
+  Downloading mysqlclient-2.1.1-cp39-cp39-win_amd64.whl (178 kB)
+     ---------------------------------------- 178.5/178.5 kB 414.5 kB/s eta 0:00:00
+Installing collected packages: mysqlclient
+Successfully installed mysqlclient-2.1.1
+
+[notice] A new release of pip available: 22.3 -> 22.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>pip install Flask-Login
+Collecting Flask-Login
+  Downloading Flask_Login-0.6.2-py3-none-any.whl (17 kB)
+Requirement already satisfied: Werkzeug>=1.0.1 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask-Login) (2.2.2)
+Requirement already satisfied: Flask>=1.0.4 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask-Login) (2.2.2)
+Requirement already satisfied: importlib-metadata>=3.6.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=1.0.4->Flask-Login) (5.0.0)
+Requirement already satisfied: Jinja2>=3.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=1.0.4->Flask-Login) (3.1.2)
+Requirement already satisfied: itsdangerous>=2.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=1.0.4->Flask-Login) (2.1.2)
+Requirement already satisfied: click>=8.0 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Flask>=1.0.4->Flask-Login) (8.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from Werkzeug>=1.0.1->Flask-Login) (2.1.1)
+Requirement already satisfied: colorama in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from click>=8.0->Flask>=1.0.4->Flask-Login) (0.4.6)
+Requirement already satisfied: zipp>=0.5 in d:\third year pict\dbms\project\studentmanagement-system-dbms-miniproject-main\studentmanagement-system-dbms-miniproject-main\myenv\lib\site-packages (from importlib-metadata>=3.6.0->Flask>=1.0.4->Flask-Login) (3.10.0)
+Installing collected packages: Flask-Login
+Successfully installed Flask-Login-0.6.2
+
+[notice] A new release of pip available: 22.3 -> 22.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main>cd "student management"
+
+(myenv) D:\THIRD YEAR PICT\DBMS\PROJECT\StudentManagement-System-dbms-miniproject-main\StudentManagement-System-dbms-miniproject-main\student management>python main.py
+ * Serving Flask app 'main'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 879-663-857
+127.0.0.1 - - [06/Nov/2022 00:24:21] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:22] "GET /static/images/bg1.jpg HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:24:23] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [06/Nov/2022 00:32:42] "GET /signup HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:32:43] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "POST /signup HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:27] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:40] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [06/Nov/2022 00:33:40] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:33:40] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:40] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:40] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:33:41] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /addstudent HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:23] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /addstudent HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:26] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /addattendance HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:30] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:31] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:31] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:31] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:31] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /addattendance HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:34:36] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:09] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /addstudent HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:14] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:15] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:15] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:15] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:16] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:19] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:20] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:24] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:25] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:27] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /addstudent HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:30] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:35:32] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "POST /addstudent HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:14] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:16] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:22] "GET /studentdetails HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:36:22] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:23] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:24] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:36:28] "GET /edit/7 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:42] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:43:50] "GET /studentdetails HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "POST /addstudent HTTP/1.1" 302 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /login?next=%2Faddstudent HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:01] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:10] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:12] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /signup HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:16] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:44:20] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:44:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:16] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:29] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:31] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "POST /search HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:42] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:44] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /addattendance HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:54] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:45:55] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+75 32455
+127.0.0.1 - - [06/Nov/2022 00:46:05] "POST /addattendance HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:05] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:07] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /triggers HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:09] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:10] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:11] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /studentdetails HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:23] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:24] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:27] "GET /search HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2022 00:46:27] "GET /static/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:27] "GET /static/assets/vendor/venobox/venobox.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/font-awesome/css/font-awesome.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/owl.carousel/assets/owl.carousel.min.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/aos/aos.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/jquery/jquery.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/jquery.easing/jquery.easing.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/php-email-form/validate.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/venobox/venobox.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/owl.carousel/owl.carousel.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/superfish/superfish.min.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/hoverIntent/hoverIntent.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/vendor/aos/aos.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/assets/js/main.js HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:28] "GET /static/images/bg1.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:30] "GET /static/assets/vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 -
+127.0.0.1 - - [06/Nov/2022 00:46:33] "GET /about HTTP/1.1" 404 -
+
+
+
+
+
+
+
+
+
